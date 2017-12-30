@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{07798D8A-2708-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Model", "EmployeeManagement.Model\EmployeeManagement.Model.csproj", "{6542249A-E456-4F48-B799-65604C036C43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +25,16 @@ Global
 		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6542249A-E456-4F48-B799-65604C036C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6542249A-E456-4F48-B799-65604C036C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6542249A-E456-4F48-B799-65604C036C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6542249A-E456-4F48-B799-65604C036C43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3} = {2E1012C8-33AD-4E8C-AD21-15E98A18DF84}
+		{6542249A-E456-4F48-B799-65604C036C43} = {2E1012C8-33AD-4E8C-AD21-15E98A18DF84}
 	EndGlobalSection
 EndGlobal
