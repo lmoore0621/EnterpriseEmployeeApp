@@ -1,0 +1,7 @@
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\bin\Debug\EmployeeManagement.Model.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\bin\Debug\EmployeeManagement.Model.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\bin\Debug\EmployeeManagement.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\bin\Debug\EmployeeManagement.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\obj\Debug\EmployeeManagement.Model.csprojResolveAssemblyReference.cache
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\obj\Debug\EmployeeManagement.Model.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Model\obj\Debug\EmployeeManagement.Model.pdb

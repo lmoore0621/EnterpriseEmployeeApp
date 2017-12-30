@@ -16,6 +16,8 @@ namespace EmployeeManagement.Data.Repositories
 
         TEntity Get(TEntityId id);
 
+        IEnumerable<TEntity> Get(IEnumerable<TEntityId> ids);
+
         IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate, int? skip = null, int? take = null);
 
         void Update(TEntity entity);
