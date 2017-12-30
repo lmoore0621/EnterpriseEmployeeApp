@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5BA2E5BA-94E9-4C25-82F9-BA0ED9A09DE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{2E1012C8-33AD-4E8C-AD21-15E98A18DF84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{6E72AF01-79C7-450A-8EF1-CF8CC42B4368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{07798D8A-2708-48EF-95A7-74CD49B05B57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64EDB7CD-EAD1-4E23-AC5A-6EF35CBD98D3} = {2E1012C8-33AD-4E8C-AD21-15E98A18DF84}
+	EndGlobalSection
+EndGlobal
