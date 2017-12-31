@@ -1,0 +1,7 @@
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\bin\Debug\EmployeeManagement.DTOs.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\bin\Debug\EmployeeManagement.DTOs.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\bin\Debug\EmployeeManagement.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\bin\Debug\EmployeeManagement.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\obj\Debug\EmployeeManagement.DTOs.csprojResolveAssemblyReference.cache
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\obj\Debug\EmployeeManagement.DTOs.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.DTOs\obj\Debug\EmployeeManagement.DTOs.pdb

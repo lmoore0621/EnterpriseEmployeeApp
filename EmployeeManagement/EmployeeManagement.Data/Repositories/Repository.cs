@@ -157,9 +157,7 @@ namespace EmployeeManagement.Data.Repositories
 
         protected void SetRepoInfo(string key, object value)
         {
-            string repoName = GetType().Name;
-
-            RepositoryInfo.Add(repoName + "-" + key, value);
+            RepositoryInfo.Add(key, value);
         }
 
         #endregion

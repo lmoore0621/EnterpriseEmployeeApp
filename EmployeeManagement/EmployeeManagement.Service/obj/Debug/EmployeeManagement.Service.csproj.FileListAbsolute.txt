@@ -1,0 +1,17 @@
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Service.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Service.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\AutoMapper.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Data.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.DTOs.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Model.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EntityFramework.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Data.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.DTOs.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.Model.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EmployeeManagement.pdb
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\AutoMapper.xml
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\bin\Debug\EntityFramework.xml
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\obj\Debug\EmployeeManagement.Service.csprojResolveAssemblyReference.cache
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\obj\Debug\EmployeeManagement.Service.dll
+C:\Users\stjonathanmark\Source\Repos\EntEmpApp\EmployeeManagement\EmployeeManagement.Service\obj\Debug\EmployeeManagement.Service.pdb
