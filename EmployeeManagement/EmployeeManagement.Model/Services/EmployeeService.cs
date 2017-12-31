@@ -27,9 +27,9 @@ namespace EmployeeManagement.Model.Services
             unitOfWork.Commit();
         }
 
-        public IEnumerable<Employee> GetAllEmployees(int? skip = default(int?), int? take = default(int?))
+        public IEnumerable<Employee> GetAllEmployees(Expression<Func<Employee, object>> orderBy, int? skip = default(int?), int? take = default(int?))
         {
-            IEnumerable<Employee> employees = unitOfWork.Employees.Get(skip, take);
+            IEnumerable<Employee> employees = unitOfWork.Employees.Get(orderBy, skip, take);
 
             return employees;
         }
@@ -41,9 +41,9 @@ namespace EmployeeManagement.Model.Services
             return employee;
         }
 
-        public IEnumerable<Employee> SearchEmployees(Expression<Func<Employee, bool>> predicate, int? skip = default(int?), int? take = default(int?))
+        public IEnumerable<Employee> SearchEmployees(Expression<Func<Employee, bool>> predicate, Expression<Func<Employee, object>> orderBy, int? skip = default(int?), int? take = default(int?))
         {
-            IEnumerable<Employee> employees = unitOfWork.Employees.Search(predicate, skip, take);
+            IEnumerable<Employee> employees = unitOfWork.Employees.Search(predicate, orderBy, skip, take);
 
             return employees;
         }

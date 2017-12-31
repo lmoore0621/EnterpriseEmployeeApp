@@ -16,19 +16,19 @@ namespace EmployeeManagement.Model.Services
 
         public IEnumerable<Degree> GetDegreeOptions()
         {
-            IEnumerable<Degree> degrees = unitOfWork.Degrees.Get();
+            IEnumerable<Degree> degrees = unitOfWork.Degrees.Get(d => d.Major + d.Level);
             return degrees;
         }
 
         public IEnumerable<Gender> GetGenderOptions()
         {
-            IEnumerable<Gender> genders = unitOfWork.Genders.Get();
+            IEnumerable<Gender> genders = unitOfWork.Genders.Get(g => g.Name);
             return genders;
         }
 
         public IEnumerable<State> GetStateOptions()
         {
-            IEnumerable<State> states = unitOfWork.States.Get();
+            IEnumerable<State> states = unitOfWork.States.Get(s => s.Name);
             return states;
         }
     }

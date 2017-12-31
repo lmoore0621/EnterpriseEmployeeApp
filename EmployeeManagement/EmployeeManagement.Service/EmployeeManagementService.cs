@@ -156,7 +156,7 @@ namespace EmployeeManagement.Service
         {
             EmployeeResponse response = new EmployeeResponse();
 
-            IEnumerable<Employee> employees = employeeService.GetAllEmployees(request.Skip, request.Take);
+            IEnumerable<Employee> employees = employeeService.GetAllEmployees(e => e.Name, request.Skip, request.Take);
 
             if (request.PageItems)
             {

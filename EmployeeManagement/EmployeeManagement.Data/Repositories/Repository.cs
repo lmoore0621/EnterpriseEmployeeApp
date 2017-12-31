@@ -73,7 +73,7 @@ namespace EmployeeManagement.Data.Repositories
             return entity;
         }
 
-        public IEnumerable<TEntity> Get(int? skip = default(int?), int? take = default(int?))
+        public IEnumerable<TEntity> Get(Expression<Func<TEntity, object>> orderBy, int? skip = default(int?), int? take = default(int?))
         {
             ClearRepoInfo();
 
@@ -83,19 +83,19 @@ namespace EmployeeManagement.Data.Repositories
 
             if (skip.HasValue && take.HasValue)
             {
-                entities = context.Set<TEntity>().OrderBy(e => e.Id).Skip(() => skip.Value).Take(() => take.Value).ToList();
+                entities = context.Set<TEntity>().OrderBy(orderBy).Skip(skip.Value).Take(take.Value).ToList();
             }
             else if (skip.HasValue)
             {
-                entities = context.Set<TEntity>().Skip(() => skip.Value).ToList();
+                entities = context.Set<TEntity>().OrderBy(orderBy).Skip(skip.Value).ToList();
             }
             else if (take.HasValue)
             {
-                entities = context.Set<TEntity>().Take(() => take.Value).ToList();
+                entities = context.Set<TEntity>().OrderBy(orderBy).Take(take.Value).ToList();
             }
             else
             {
-                entities = context.Set<TEntity>().ToList();
+                entities = context.Set<TEntity>().OrderBy(orderBy).ToList();
             }
 
             SetRepoInfo("ItemsFound", itemsFound);
@@ -103,7 +103,7 @@ namespace EmployeeManagement.Data.Repositories
             return entities;
         }
 
-        public IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate, int? skip = default(int?), int? take = default(int?))
+        public IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, object>> orderBy, int? skip = default(int?), int? take = default(int?))
         {
             ClearRepoInfo();
 
@@ -113,19 +113,19 @@ namespace EmployeeManagement.Data.Repositories
 
             if (skip.HasValue && take.HasValue)
             {
-                entities = context.Set<TEntity>().Where(predicate).Skip(skip.Value).Take(take.Value).ToList();
+                entities = context.Set<TEntity>().Where(predicate).OrderBy(orderBy).Skip(skip.Value).Take(take.Value).ToList();
             }
             else if (skip.HasValue)
             {
-                entities = context.Set<TEntity>().Where(predicate).Skip(skip.Value).ToList();
+                entities = context.Set<TEntity>().Where(predicate).OrderBy(orderBy).Skip(skip.Value).ToList();
             }
             else if (take.HasValue)
             {
-                entities = context.Set<TEntity>().Where(predicate).Take(take.Value).ToList();
+                entities = context.Set<TEntity>().Where(predicate).OrderBy(orderBy).Take(take.Value).ToList();
             }
             else
             {
-                entities = context.Set<TEntity>().Where(predicate).ToList();
+                entities = context.Set<TEntity>().Where(predicate).OrderBy(orderBy).ToList();
             }
 
             SetRepoInfo("ItemsFound", itemsFound);

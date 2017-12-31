@@ -12,13 +12,13 @@ namespace EmployeeManagement.Data.Repositories
 
         void Add(IEnumerable<TEntity> entities);
 
-        IEnumerable<TEntity> Get(int? skip = null, int? take = null);
+        IEnumerable<TEntity> Get(Expression<Func<TEntity, object>> orderBy, int? skip = null, int? take = null);
 
         TEntity Get(TEntityId id);
 
         IEnumerable<TEntity> Get(IEnumerable<TEntityId> ids);
 
-        IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate, int? skip = null, int? take = null);
+        IEnumerable<TEntity> Search(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, object>> orderBy, int? skip = null, int? take = null);
 
         void Update(TEntity entity);
 
