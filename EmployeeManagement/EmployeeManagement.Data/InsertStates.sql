@@ -1,4 +1,4 @@
-﻿INSERT INTO State (Name, Abbreviation)
+﻿INSERT INTO States (Name, Abbreviation)
 VALUES
 ('Alabama','AL'), -- States
 ('Alaska','AK'),
