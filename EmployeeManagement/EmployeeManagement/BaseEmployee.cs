@@ -14,7 +14,7 @@ namespace EmployeeManagement
 
         public DateTime BirthDate { get; set; }
 
-        public virtual int Age { get; }
+        public virtual int Age { get; set; }
 
         public string PhoneNumber { get; set; }
 
