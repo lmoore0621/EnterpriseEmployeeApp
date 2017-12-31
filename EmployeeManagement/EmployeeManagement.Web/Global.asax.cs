@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 using EmployeeManagement.Service;
+using Newtonsoft.Json.Serialization;
 
 namespace EmployeeManagement.Web
 {
@@ -19,7 +20,11 @@ namespace EmployeeManagement.Web
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            DtoMapper.ConfigureMappings();         
+            DtoMapper.ConfigureMappings();
+
+            HttpConfiguration config = GlobalConfiguration.Configuration;
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            config.Formatters.JsonFormatter.UseDataContractJsonSerializer = false;
         }
     }
 }
