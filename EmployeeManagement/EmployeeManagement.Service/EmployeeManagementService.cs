@@ -21,6 +21,7 @@ namespace EmployeeManagement.Service
 
         public EmployeeManagementService()
         {
+            SetDefaultMessages();
             employeeService = new EmployeeService(new EmployeeUnitOfWork(new DataSource()));
             generalService = new GeneralService(new GeneralUnitOfWork(new DataSource()));
         }

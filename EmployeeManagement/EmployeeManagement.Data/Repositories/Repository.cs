@@ -83,15 +83,15 @@ namespace EmployeeManagement.Data.Repositories
 
             if (skip.HasValue && take.HasValue)
             {
-                entities = context.Set<TEntity>().Skip(skip.Value).Take(take.Value).ToList();
+                entities = context.Set<TEntity>().OrderBy(e => e.Id).Skip(() => skip.Value).Take(() => take.Value).ToList();
             }
             else if (skip.HasValue)
             {
-                entities = context.Set<TEntity>().Skip(skip.Value).ToList();
+                entities = context.Set<TEntity>().Skip(() => skip.Value).ToList();
             }
             else if (take.HasValue)
             {
-                entities = context.Set<TEntity>().Take(take.Value).ToList();
+                entities = context.Set<TEntity>().Take(() => take.Value).ToList();
             }
             else
             {

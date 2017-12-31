@@ -62,7 +62,7 @@ namespace EmployeeManagement.Model.Services
 
                 if (unitOfWork.Employees.RepositoryInfo.ContainsKey("ItemsFound"))
                 {
-                    itemsFound = (int)unitOfWork.Employees.RepositoryInfo["itemsFound"];
+                    itemsFound = (int)unitOfWork.Employees.RepositoryInfo["ItemsFound"];
                 }
                 
                 return itemsFound;
