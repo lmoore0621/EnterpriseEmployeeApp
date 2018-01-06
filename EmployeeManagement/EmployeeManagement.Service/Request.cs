@@ -1,9 +1,11 @@
 ﻿
+using System;
+
 namespace EmployeeManagement.Service
 {
     public class Request
     {
-        public bool PageItems { get; set; }
+        public bool PageItems { get { return PageNumber.HasValue && PageSize.HasValue; } }
 
         public int ItemCount { get; set; }
 
@@ -19,7 +21,7 @@ namespace EmployeeManagement.Service
             {
                 int? skip = null;
 
-                if (PageItems && PageSize.HasValue && PageNumber.HasValue)
+                if (PageItems)
                 {
                     skip = ((PageNumber - 1) * PageSize);
                 }

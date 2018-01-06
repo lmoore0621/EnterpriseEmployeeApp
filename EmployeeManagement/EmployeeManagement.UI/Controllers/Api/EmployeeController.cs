@@ -23,7 +23,7 @@ namespace EmployeeManagement.UI.Controllers.Api
         {
             EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.GetAllEmployees)
             {
-                PageItems = true,
+                //PageItems = true,
                 PageNumber = pageNumber,
                 PageSize = pageSize,
                 MedianPage = medianPage

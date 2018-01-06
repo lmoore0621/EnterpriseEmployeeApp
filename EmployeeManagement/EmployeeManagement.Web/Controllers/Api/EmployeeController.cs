@@ -9,6 +9,7 @@ using EmployeeManagement.Service;
 
 namespace EmployeeManagement.Web.Controllers.Api
 {
+    [RoutePrefix("api/employee")]
     public class EmployeeController : ApiController
     {
         private EmployeeManagementService service;
@@ -20,11 +21,12 @@ namespace EmployeeManagement.Web.Controllers.Api
         }
 
         [HttpGet]
+        [Route("all")]
+        [Route("all/{pageNumber}/{pageSize}")]
         public EmployeeResponse GetAllEmployees(int? pageNumber = null, int? pageSize = null)
         {
             EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.GetAllEmployees)
             {
-                PageItems = true,
                 PageNumber = pageNumber,
                 PageSize = pageSize,
                 MedianPage = medianPage
@@ -34,5 +36,45 @@ namespace EmployeeManagement.Web.Controllers.Api
 
             return response;
         }
+
+        [HttpPost]
+        public EmployeeResponse CreateEmployee(EmployeeDto employee)
+        {
+            EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.CreateEmployee)
+            {
+                Employee = employee
+            };
+
+            EmployeeResponse response = service.DoRequest(request);
+
+            return response;
+        }
+
+        [HttpPut]
+        public EmployeeResponse UpdateEmployee(EmployeeDto employee)
+        {
+            EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.UpdateEmployee)
+            {
+                Employee = employee
+            };
+
+            EmployeeResponse response = service.DoRequest(request);
+
+            return response;
+        }
+
+        [HttpDelete]
+        public EmployeeResponse DeleteeEmployee(int employeeId)
+        {
+            EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.DeleteEmployee)
+            {
+                EmployeeId = employeeId
+            };
+
+            EmployeeResponse response = service.DoRequest(request);
+
+            return response;
+        }
+
     }
 }
