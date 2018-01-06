@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Scripts\functionality.js" />
     <Content Include="Content\Scripts\Libs\angular-route.js" />
     <Content Include="Content\Scripts\Libs\angular.js" />
     <Content Include="Global.asax" />
@@ -112,6 +113,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\EmployeeController.cs" />
+    <Compile Include="Controllers\Web\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -121,6 +123,12 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Update.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\Web\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Employeee Management</title>
+    <script src="~/Content/Scripts/Libs/angular.js"></script>
+    <script src="~/Content/Scripts/Libs/angular-route.js"></script>
+    <script src="~/Content/Scripts/functionality.js"></script>
+    <style>
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="/employee/home">Home</a> &nbsp;&nbsp;
+            <a href="/employee/create">Create</a>
+        </nav>
+        @RenderBody()
+    </div>
+</body>
+</html>
