@@ -1,2 +1,73 @@
 ﻿
 <h2>Update Employee</h2>
+
+<form ng-submit="updateEmployee()">
+    <table>
+        <tr>
+            <td class="name">Name:</td>
+            <td>
+                <input type="text" ng-model="employee.name" />
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="name">Birth Date:</td>
+            <td>
+                <input type="text" ng-model="employee.birthDate | date : 'MM/dd/yyyy'" />
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="name">Phone Number:</td>
+            <td>
+                <input type="text" ng-model="employee.phoneNumber" />
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="name">Email Address:</td>
+            <td>
+                <input type="text" ng-model="employee.emailAddress" />
+            </td>
+        </tr>
+
+        <tr>
+            <td class="name">Gender:</td>
+            <td>
+                <select ng-model="employee.genderId">
+                    <option value="">Choose Gender</option>
+                    <option ng-repeat="gender in genders" ng-value="gender.id">{{ gender.name }}</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="name">Degree:</td>
+            <td>
+                <select ng-model="employee.degreeId">
+                    <option value="">Choose Degree</option>
+                    <option ng-repeat="degree in degrees" ng-value="degree.id">{{ degree.major + ' - ' + degree.level }}</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="name">State:</td>
+            <td>
+                <select ng-model="employee.stateId">
+                    <option value="">Choose State</option>
+                    <option ng-repeat="state in states" ng-value="state.id">{{ state.name }}</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Update Employee" />
+            </td>
+        </tr>
+    </table>
+</form>

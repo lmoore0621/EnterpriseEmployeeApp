@@ -29,5 +29,10 @@ namespace EmployeeManagement.Web.Controllers.Web
         {
             return PartialView();
         }
+
+        public ActionResult PagingLinks()
+        {
+            return PartialView();
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace EmployeeManagement.Model.Services
 
         public IEnumerable<Employee> GetAllEmployees(Expression<Func<Employee, object>> orderBy, int? skip = default(int?), int? take = default(int?))
         {
-            IEnumerable<Employee> employees = unitOfWork.Employees.Get(orderBy, skip, take);
+            IEnumerable<Employee> employees = unitOfWork.Employees.GetWithRelatedData(orderBy, skip, take);
 
             return employees;
         }

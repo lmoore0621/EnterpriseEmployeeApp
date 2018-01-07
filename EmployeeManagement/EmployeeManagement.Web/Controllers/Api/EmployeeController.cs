@@ -37,6 +37,20 @@ namespace EmployeeManagement.Web.Controllers.Api
             return response;
         }
 
+        [HttpGet]
+        [Route("{employeeId}")]
+        public EmployeeResponse GetEmployee(int employeeId)
+        {
+            EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.GetEmployee)
+            {
+                EmployeeId = employeeId
+            };
+
+            EmployeeResponse response = service.DoRequest(request);
+
+            return response;
+        }
+
         [HttpPost]
         public EmployeeResponse CreateEmployee(EmployeeDto employee)
         {
@@ -64,6 +78,7 @@ namespace EmployeeManagement.Web.Controllers.Api
         }
 
         [HttpDelete]
+        [Route("{employeeId}")]
         public EmployeeResponse DeleteeEmployee(int employeeId)
         {
             EmployeeRequest request = new EmployeeRequest(EmployeeRequestType.DeleteEmployee)

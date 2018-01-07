@@ -2,3 +2,53 @@
 <h2>Welcome to the Employee Management App</h2>
 
 <h3>Behold the employees.</h3>
+
+<div ng-if="employeesLoading">
+    Loading Employees...
+</div>
+
+<table ng-if="!employeesLoading">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Birth Date</th>
+            <th>Gender</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Degree</th>
+            <th>State</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+
+    <tbody ng-if="employees.length">
+        <tr ng-if="employees.length" ng-repeat="employee in employees">
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.birthDate | date : 'MM/dd/yyyy' }}</td>
+            <td>{{ employee.gender.name }}</td>
+            <td>{{ employee.phoneNumber }}</td>
+            <td>{{ employee.emailAddress }}</td>
+            <td>{{ employee.degree.major + ' - ' + employee.degree.level }}</td>
+            <td>{{ employee.state.name }}</td>
+            <td>
+                <a class="buttonLink" href="/employee/update/{{ employee.id }}">Update</a>
+                <a class="buttonLink" ng-click="deleteEmployee(employee.id)">Delete</a>
+            </td>
+        </tr>
+        <tr ng-if="!employees.length">
+            <td colspan="9" align="center">
+                No Employees Found
+            </td>
+        </tr>
+    </tbody>
+
+    <tfoot ng-if="pagingInfo && pagingInfo.pageCount > 1">
+        <tr>
+            <td colspan="9" align="center">
+                 <paging-links paging-info="pagingInfo" on-page-items="pageEmployees(pageNum, pageSize)"></paging-links>
+            </td>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,44 @@
+﻿body {
+    font-size: 13px;
+    font-family: Verdana;
+}
+
+a, a:visited, a:active, a:hover {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 1px black;
+}
+
+td, th {
+    padding: 8px;
+    margin: 0px;
+    border: solid 1px black;
+}
+
+.pagingLink, .buttonLink {
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 0 .5em;
+    border: solid 1px blue;
+    margin: 0 .25em;
+    text-decoration: none;
+}
+
+.pagingLink:hover, .selectedPagingLink, .buttonLink:hover {
+    cursor: pointer;
+    background-color: #06c1fe;
+    color: white;
+}
+
+
+td.name {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+
+

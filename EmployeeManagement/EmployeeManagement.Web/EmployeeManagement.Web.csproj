@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Css\style.css" />
     <Content Include="Content\Scripts\functionality.js" />
     <Content Include="Content\Scripts\Libs\angular-route.js" />
     <Content Include="Content\Scripts\Libs\angular.js" />
@@ -130,6 +131,7 @@
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\Update.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\PagingLinks.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,12 @@
+﻿
+<a class="pagingLink" ng-if="pagingInfo.showFirst" ng-click="onPageItems(1, pagingInfo.pageSize)">First</a>
+
+<a class="pagingLink" ng-if="pagingInfo.showPrev" ng-click="onPageItems(pagingInfo.prevPage, pagingInfo.pageSize)">Prev</a>
+
+
+<a class="pagingLink" ng-repeat="page in pages" ng-class="{selectedPagingLink: (page == pagingInfo.pageNumber)}" ng-click="onPageItems(page, pagingInfo.pageSize)">{{ page }}</a>
+
+
+<a class="pagingLink" ng-if="pagingInfo.showNext" ng-click="onPageItems(pagingInfo.nextPage , pagingInfo.pageSize)">Next</a>
+
+<a class="pagingLink" ng-if="pagingInfo.showLast" ng-click="onPageItems(pagingInfo.pageCount, pagingInfo.pageSize)">Last</a>

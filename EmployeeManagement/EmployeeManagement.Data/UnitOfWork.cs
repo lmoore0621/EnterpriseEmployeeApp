@@ -12,6 +12,7 @@ namespace EmployeeManagement.Data
         public UnitOfWork(DataSource context)
         {
             this.context = context;
+            this.context.Configuration.LazyLoadingEnabled = false;
             uowInfo = new Dictionary<string, object>();
         }
 

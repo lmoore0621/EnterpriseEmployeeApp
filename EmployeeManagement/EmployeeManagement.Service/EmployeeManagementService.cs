@@ -120,9 +120,9 @@ namespace EmployeeManagement.Service
         {
             GeneralResponse response = new GeneralResponse();
 
-            IEnumerable<Gender> genders = generalService.GetGenderOptions();
+            IEnumerable<Degree> degrees = generalService.GetDegreeOptions();
 
-            response.GenderOptions = Mapper.Map<IEnumerable<GenderDto>>(genders);
+            response.DegreeOptions = Mapper.Map<IEnumerable<DegreeDto>>(degrees);
 
             return response;
         }

@@ -33,7 +33,18 @@ namespace EmployeeManagement.Service
         {
             if (itemCount.HasValue && pageSize.HasValue)
             {
-                pageCount = itemCount.Value / pageSize.Value;
+                if (ItemCount > pageSize)
+                {
+                    pageCount = itemCount.Value / pageSize.Value;
+                    if (itemCount.Value % pageSize.Value > 0)
+                    {
+                        pageCount++;
+                    }
+                }
+                else
+                {
+                    pageCount = 1;
+                }
             }
             else
             {
@@ -202,7 +213,8 @@ namespace EmployeeManagement.Service
 
             if (itemCount > pageSize)
             {
-                pageCount = itemCount.Value / pageSize.Value;
+                GetPageCount();
+                pageCount = PageCount;
             }
             else
             {

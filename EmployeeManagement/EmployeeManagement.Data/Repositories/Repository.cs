@@ -143,9 +143,7 @@ namespace EmployeeManagement.Data.Repositories
 
         public void Update(TEntity entity)
         {
-            TEntity entityToUpdate = Get(entity.Id);
-
-            context.Entry(entityToUpdate).OriginalValues.SetValues(entity);
+            context.Entry(entity).State = EntityState.Modified;
         }
         
         #region Helper Methods
