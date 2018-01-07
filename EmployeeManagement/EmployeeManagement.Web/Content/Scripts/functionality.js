@@ -160,6 +160,7 @@ app.component('pagingLinks', {
         }
 
         function addPages() {
+            $scope.pages.splice(0, $scope.pages.length);
             for (var i = $scope.pagingInfo.startPage; i <= $scope.pagingInfo.endPage; i++) {
                 $scope.pages.push(i);
             }
