@@ -7,6 +7,6 @@ namespace EmployeeManagement.DTOs
 
         public GenderDto Gender { get; set; }
 
-        private StateDto State { get; set; }
+        public StateDto State { get; set; }
     }
 }

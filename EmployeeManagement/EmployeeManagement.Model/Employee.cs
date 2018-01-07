@@ -4,7 +4,6 @@ namespace EmployeeManagement.Model
 {
     public class Employee : BaseEmployee
     {
-
         public override int Age
         {
             get
