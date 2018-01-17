@@ -145,7 +145,7 @@ namespace EmployeeManagement.Service
         {
             EmployeeResponse response = new EmployeeResponse();
 
-            Employee employee = employeeService.GetEmployee(request.EmployeeId); ;
+            Employee employee = employeeService.GetEmployee(request.EmployeeId);
 
             response.Employee = Mapper.Map<EmployeeDto>(employee);
 
